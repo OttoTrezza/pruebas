@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/app/intermedio/espias/medicos.service.ts</title>
+    <title>Code coverage report for src/app/intermedio2/medico/medico.component.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\..\..\base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">src/app/intermedio/espias</a> medicos.service.ts
+      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">src/app/intermedio2/medico</a> medico.component.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">72% </span>
+        <span class="strong">83.33% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>18/25</span>
+        <span class='fraction'>20/24</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">55.17% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>16/29</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">40% </span>
+        <span class="strong">62.5% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>4/10</span>
+        <span class='fraction'>5/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">70% </span>
+        <span class="strong">84.21% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>14/20</span>
+        <span class='fraction'>16/19</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -71,8 +71,7 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -85,44 +84,42 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Injectable } from<span class="branch-1 cbranch-no" title="branch not covered" > '@angular/core'</span>;
-import { Http } from '@angular/http';<span class="branch-1 cbranch-no" title="branch not covered" ></span>
-// i<span class="missing-if-branch" title="if path not taken" >I</span>mport 'rxjs/add/operator/map';<span class="cstat-no" title="statement not covered" ></span>
-import { map } from 'rxjs/operators';<span class="branch-1 cbranch-no" title="branch not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span>
-@Injectable()<span class="branch-2 cbranch-no" title="branch not covered" ><span class="branch-1 cbranch-no" title="branch not covered" ></span></span>
-export class MedicosService {
-<span class="branch-1 cbranch-no" title="branch not covered" ></span>
-  co<span class="missing-if-branch" title="else path not taken" >E</span>nstructor( public http: Http ) { }
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, OnInit<span class="branch-1 cbranch-no" title="branch not covered" > } from '@angula</span>r/core';
+import { MedicoService } from './medico.service';<span class="branch-1 cbranch-no" title="branch not covered" ></span>
+<span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span></span>
+@Component({<span class="branch-1 cbranch-no" title="branch not covered" ><span class="missing-if-branch" title="else path not taken" >E</span></span>
+  selector: 'app-med<span class="branch-1 cbranch-no" title="branch not covered" >ic</span>o',<span class="branch-2 cbranch-no" title="branch not covered" ></span>
+  templateUrl: './medico.component.html',
+  styles: []<span class="branch-1 cbranch-no" title="branch not covered" ></span>
+})<span class="missing-if-branch" title="else path not taken" >E</span>
+export class MedicoComponent implements OnInit {
 &nbsp;
-  getMedicos() {
-    return this.http.get('...')
-                .map( resp =&gt; resp['medicos'] );
+  medicos: any[] = [];
+  constructor( public _medicoService: MedicoService ) { }
+&nbsp;
+  ngOnInit() {
   }
 &nbsp;
-  agregarMedico( medico: any ) {
-    return this.http.post('...', medico )<span class="fstat-no" title="function not covered" ></span>
-<span class="cstat-no" title="statement not covered" >                .map( resp =&gt; resp['medico'] );</span>
-  }<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
-&nbsp;
-  borrarMedico( id: string ) {<span class="fstat-no" title="function not covered" ></span>
-    retu<span class="cstat-no" title="statement not covered" >rn this.http.delete('...' )</span>
-                .<span class="fstat-no" title="function not covered" >ma</span>p( resp =&gt; resp[<span class="cstat-no" title="statement not covered" >'medico'] );</span>
+  saludarMedico( nombre: string) {<span class="fstat-no" title="function not covered" ></span>
+    return `Hola ${ nombre}`;
   }
-<span class="fstat-no" title="function not covered" ></span>
+  obtenerMedicos() {
+    this._medicoService.getMedicos()
+        .subscribe( (medicos: any[]) =&gt; this.me<span class="fstat-no" title="function not covered" >di</span>cos = medicos);
 <span class="cstat-no" title="statement not covered" ></span>
+  }<span class="cstat-no" title="statement not covered" ></span>
 }<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
 &nbsp;</pre></td></tr>
 </table></pre>
